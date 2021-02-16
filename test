@@ -1,0 +1,33 @@
+<!-- **************************** -->
+<!-- Fichier HTLM avec formulaire -->
+<!-- **************************** -->
+ 
+<!DOCTYPE html>
+ 
+<html>
+ 
+    <head>
+        <title>Exemple</title>
+        <meta charset="UTF-8" />
+    </head>
+ 
+<body>
+ 
+<h1>Formulaire d'upload de fichier</h1>
+ 
+    <form action="recup_fichier.php" method="POST" enctype="multipart/form-data">
+ 
+        <!-- la taille du fichier est ici limitée à 102400 octect = 100 ko -->
+        <input type="hidden"  name="MAX_FILE_SIZE" value="102400">
+ 
+        <!-- le type file pour l'upload de fichier -->
+        <input  type="file" name="fichierChoisi" size="60">
+ 
+        <!-- le bouton de soumission du formulaire -->
+        <input type="submit" name="telechargement"  value="telecharger">
+ 
+    </form>
+ 
+</body>
+ 
+</html>
